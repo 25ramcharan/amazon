@@ -1,0 +1,17 @@
+services:
+  # Backend API (Express) - Frontend is deployed on Vercel
+  - type: web
+    name: amazon-project
+    env: node
+    rootDir: Backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: PORT
+        value: 5000
+      - key: FRONTEND_URL
+        sync: false
