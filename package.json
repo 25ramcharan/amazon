@@ -1,0 +1,8 @@
+{
+  "name": "amazon-root",
+  "version": "1.0.0",
+  "scripts": {
+    "postinstall": "cd Backend && npm install",
+    "start": "cd Backend && npm start"
+  }
+}
